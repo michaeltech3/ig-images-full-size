@@ -1,44 +1,24 @@
 <!-- Start of Instagram Full Size Viewer -->
-<div id="igFullSizeViewer">
+<div id="igFullSizeViewer" class="tool-form-1">
     <h5>View Full-Size Instagram Photos</h5>
 
     <label for="instaURL" class="centered-label">Enter the opened image's URL from the new tab</label>
-    <input type="text" id="instaURL" placeholder="Paste opened image URL here" style="width: 60%;" oninput="autoGenerateLink()">
+    <input type="text" id="instaURL" class="tool-input-1" placeholder="Paste opened image URL here" oninput="autoGenerateLink()">
 
-<div style="height: 35px;"></div> <!-- Space added here -->
+    <div style="height: 35px;"></div> <!-- Space added here -->
 
     <label for="fullSizeURL" class="centered-label">Full Size Image URL</label>
-    <input type="text" id="fullSizeURL" placeholder="Generated URL will appear here" style="width: 60%;" readonly>
+    <input type="text" id="fullSizeURL" class="tool-input-1" placeholder="Generated URL will appear here" readonly>
 
     <div class="buttons">
-        <button class="affiliate-button-1" onclick="copyToClipboard()">Copy URL</button>
-        <button class="affiliate-button-1" onclick="viewImage()">Open Image</button>
+        <button class="tool-button-1" onclick="copyToClipboard()">Copy URL</button>
+        <button class="tool-button-1" onclick="viewImage()">Open Image</button>
     </div>
 
     <div style="height: 15px;"></div> <!-- Half the size of the text field added here -->
 
     <p class="centered-label" style="font-size: 12px;">After opening the image, focus on the browser address bar by clicking it or pressing Ctrl+L (Cmd+L for Mac).</p>
 </div>
-
-<style>
-    #igFullSizeViewer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    #igFullSizeViewer .centered-label {
-        text-align: center;
-        width: 60%;
-    }
-
-    #igFullSizeViewer .buttons {
-        width: 60%;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 15px;
-    }
-</style>
 
 <script>
     function autoGenerateLink() {
@@ -68,4 +48,5 @@
         }
     }
 </script>
+
 <!-- End of Instagram Full Size Viewer -->
